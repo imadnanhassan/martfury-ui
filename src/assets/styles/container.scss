@@ -1,0 +1,34 @@
+// src/styles/container.scss
+
+@import "variables";
+
+.mf-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+ 
+
+  @media (min-width: $breakpoint-xs) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 960px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1320px;
+  }
+
+  @media (min-width: $breakpoint-2xl) {
+    max-width: 1650px;
+  }
+}
