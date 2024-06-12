@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import images from "../../assets/images/images";
-import { BarChart3, Heart, ShoppingBag, User } from "lucide-react";
+
 import Badge from "../../components/common/Badge";
+import { LuBarChart3 } from "react-icons/lu";
 
 export default function MainHeader() {
   return (
@@ -60,22 +61,20 @@ export default function MainHeader() {
           <div className="flex justify-between items-center gap-10 max-w-[370px]">
             <div className="xl:flex items-center gap-[30px] md:hidden hidden">
               <Link to={""}>
-                <BarChart3 size={32} />
+                <LuBarChart3 />
                 <Badge text="0" position="top" />
               </Link>
               <Link to={""}>
-                <Heart size={32} />
+                {/* <Heart size={32} /> */}
                 <Badge text="0" position="top" />
               </Link>
               <Link to={""}>
-                <ShoppingBag size={32} />
+                {/* <ShoppingBag size={32} /> */}
                 <Badge text="0" position="top" />
               </Link>
             </div>
             <div className="flex items-center ">
-              <span>
-                <User size={32} />
-              </span>
+              <span>{/* <User size={32} /> */}</span>
               <span className=" flex flex-col">
                 <Link to={""} className="text-sm font-semibold">
                   Login
