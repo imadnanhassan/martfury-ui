@@ -17,7 +17,7 @@ import "swiper/css/effect-creative";
 
 const Banner = () => {
   return (
-    <div className="mf-container flex py-5">
+    <section className="mf-container flex py-7">
       <div className="mf-section__left">
         <Swiper
           grabCursor={true}
@@ -68,7 +68,7 @@ const Banner = () => {
           <img src={images.bannerPromotion2} alt="" />
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 
