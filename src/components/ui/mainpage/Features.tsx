@@ -41,8 +41,6 @@ const featuresData = [
 const Features = () => {
   return (
     <section className="mf-container py-7">
-    
-
       <div className="features">
         {featuresData.map((feature) => (
           <div className="features_items" key={feature.id}>

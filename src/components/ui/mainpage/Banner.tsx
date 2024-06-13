@@ -41,7 +41,6 @@ const Banner = () => {
             },
           }}
           modules={[EffectCreative, Autoplay, Navigation, Pagination]}
-          className="mySwiper"
         >
           <SwiperSlide>
             <img src={images.slider2} alt="" />
@@ -60,7 +59,7 @@ const Banner = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="mf-section__right flex flex-col gap-[30px]">
+      <div className="mf-section__right flex flex-col gap-[10px]">
         <Link to={"/shop"}>
           <img src={images.bannerPromotion1} alt="" />
         </Link>
