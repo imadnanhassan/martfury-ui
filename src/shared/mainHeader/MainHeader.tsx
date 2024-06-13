@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import images from "../../assets/images/images";
-
 import Badge from "../../components/common/Badge";
 import { LuBarChart3 } from "react-icons/lu";
 import { CiHeart, CiUser } from "react-icons/ci";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { useState } from "react";
+import { HiOutlineBars3 } from "react-icons/hi2";
 
 const categories = [
   "All",
@@ -46,7 +46,7 @@ export default function MainHeader() {
   return (
     <>
       {/* desktop header */}
-      <section className="bg-Primary border-b lg:block sm:hidden hidden">
+      <section className="bg-Primary  lg:block sm:hidden hidden">
         <div className="py-[25px] mf-container flex items-center gap-4 ">
           <div className="flex items-center gap-4 flex-1">
             <div className="max-w-[300px] flex items-center">
@@ -127,8 +127,42 @@ export default function MainHeader() {
             </div>
           </div>
         </div>
+        <hr className="h-px  bg-[#00000026] border-0 "></hr>
+        <div className="mf-container py-4 flex">
+          <div className="max-w-[260px]">
+            <h3 className="flex items-center gap-3">
+              <HiOutlineBars3 className="text-[20px]" />
+              Shop by Department
+            </h3>
+          </div>
+          <div className="flex-1 flex items-center justify-between pl-[35px]">
+            <div className="menu">
+              <ul className="flex items-center gap-5 menu">
+                <li>Home</li>
+                <li>About</li>
+                <li>
+                  <Link to={"/shop"}>Shop</Link>
+                </li>
+
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+
+            <div className=" flex items-center gap-3">
+              <h4>Sell on Martfury</h4>
+              <h4 className="border-l border-r border-black pl-2 pr-2">
+                Truck your order
+              </h4>
+              <button className="border-r border-black pr-2 ">
+                USA
+              </button>
+              <button>Language</button>
+            </div>
+          </div>
+        </div>
       </section>
-      
+
       {/* mobile header */}
     </>
   );
