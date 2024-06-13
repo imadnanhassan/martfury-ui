@@ -1,0 +1,22 @@
+.mf-container {
+  .mf-section__left {
+    padding-right: 30px;
+    max-width: calc(100% - 390px);
+  }
+
+  .mf-section__right {
+    max-width: 390px;
+  }
+
+  .swiper {
+    width: 100%;
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,7 +1,9 @@
-
+import Banner from "../../../components/ui/mainpage/Banner";
 
 export default function HomePage() {
   return (
-    <div>HomePage</div>
-  )
+    <section>
+      <Banner />
+    </section>
+  );
 }
